@@ -6,12 +6,23 @@
 
 body {
   font-style: 'Muli', sans-serif;
+  overflow: hidden;
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  height: 100vh;
   margin: 0;
+}
+
+.wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -19,6 +30,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 90vw;
+  height: 500px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 0px;
 }
 
 .panel {
