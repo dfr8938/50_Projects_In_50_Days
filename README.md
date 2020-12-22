@@ -2,4 +2,5 @@
 
 1. Progect start
 2. Progress steps
-3. ...
+3. Rotating navigation
+4. ...
