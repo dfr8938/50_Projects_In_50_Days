@@ -3,4 +3,5 @@
 1. Progect start
 2. Progress steps
 3. Rotating navigation
-4. ...
+4. Hidden search
+5. ...
