@@ -1,31 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
-
-:root {
-  --line-border-fill: #3498db;
-  --line-border-empty: #e0e0e0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #f6f7fb;
-  font-style: 'Muli', sans-serif;
+  font-style: 'Lato', sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
   margin: 0;
+  background: #333333;
+  color: #222222;
 }
 
 .container {
-  text-align: center;
+  background: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vh;
+  min-height: 100vh;
+  padding: 50px;
 }
 
-img {
-  width: 400px;
+.container.show_nav {
+  transform: rotate(-20deg);
+}
+
+.circle_container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background: #ff7979;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+content img {
+  max-width: 100%;
 }
