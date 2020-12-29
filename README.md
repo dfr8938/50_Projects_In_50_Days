@@ -4,4 +4,5 @@
 2. Progress steps
 3. Rotating navigation
 4. Hidden search
-5. ...
+5. Blurring load
+6. ...
