@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+:root {
+  --left-bg-color: rgba(0, 0, 0, 0.7);
+  --right-bg-color: rgba(87, 84, 236, 0.7);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  text-decoration: none;
+  transform: translateX(-50%);
+  color: white;
+  border: #fff solid 0.2rem;
+  border-radius: 3px;
+  padding: 1.5rem;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.split.left .btn:hover {
+  background: var(--left-btn-hover-color);
+}
+
+.split.right .btn:hover {
+  background: var(--right-btn-hover-color);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+}
+
+.split {
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.split.left {
+  left: 0;
+  background: url('img/ps.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  background: url('img/xb.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background: var(--right-bg-color);
+}
