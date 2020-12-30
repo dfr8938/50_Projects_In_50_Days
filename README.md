@@ -6,4 +6,4 @@
 4. Hidden search
 5. Blurring load
 6. Animation scroll
-7. ...
+7. Split landing page
